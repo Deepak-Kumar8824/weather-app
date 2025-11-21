@@ -1,0 +1,12 @@
+Initial project skeleton with HTML, CSS, JS and Tailwind
+Add basic layout and search input
+Implement fetch by city using WeatherAPI
+Render current weather card with temperature and condition
+Add 5-day forecast rendering
+Implement geolocation-based weather fetch
+Add recent searches stored in localStorage
+Add temperature toggle (C/F) functionality
+Add custom error display (no alert)
+Add background change by weather condition
+Add extreme temperature alert (>40C)
+Write README and final project polish

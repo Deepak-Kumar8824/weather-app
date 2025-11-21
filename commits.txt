@@ -1,0 +1,55 @@
+Suggested sequence of commits (create these locally using git):
+
+git init
+git add index.html styles.css script.js README.md commits.txt
+git commit -m "Initialize project with base HTML structure and Tailwind setup"
+
+# 1. Add base layout and header
+git add index.html
+git commit -m "Add header, search input, and layout placeholders for current weather and forecast"
+
+# 2. Add styles file
+git add styles.css
+git commit -m "Add custom styles file for small layout tweaks"
+
+# 3. Add basic JS skeleton
+git add script.js
+git commit -m "Add JavaScript skeleton and API key placeholder"
+
+# 4. Implement city search and geocoding lookup
+git add script.js
+git commit -m "Implement city search and geocoding via OpenWeatherMap"
+
+# 5. Implement current weather fetch and display
+git add script.js
+git commit -m "Fetch and render current weather (temp, humidity, wind, icon)"
+
+# 6. Implement 5-day forecast parsing and display
+git add script.js
+git commit -m "Add 5-day forecast parsing from 3-hour interval data and render cards"
+
+# 7. Add recent searches using localStorage
+git add script.js
+git commit -m "Store recent cities in localStorage and populate dropdown"
+
+# 8. Add geolocation support
+git add script.js
+git commit -m "Add 'Use My Location' button and geolocation-based weather fetch"
+
+# 9. Add temperature unit toggle for today's temperature
+git add script.js
+git commit -m "Implement °C/°F toggle for today's temperature only"
+
+# 10. Add dynamic backgrounds and extreme temperature alert
+git add script.js
+git commit -m "Dynamic background based on condition and extreme temperature alert"
+
+# 11. Improve error handling and add custom error popup UI
+git add index.html script.js
+git commit -m "Replace JS alert() with custom popup and add input validation"
+
+# 12. Final polish and README
+git add README.md
+git commit -m "Add README and finalize project for submission"
+
+After these steps you will have 12 meaningful commits in the repository.

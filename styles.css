@@ -1,0 +1,5 @@
+/* Additional styles if needed; Tailwind handles the main layout */
+body.rainy {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><rect width="100%" height="100%" fill="%230E5A8A"/><g fill="none" stroke="%23A7E0FF" stroke-width="2"><path d="M50 0 L60 20"/></g></svg>');
+  background-size: cover;
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather Forecast App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-sky-100 to-white p-4 transition-colors" id="app">
+  <div class="max-w-4xl mx-auto">
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold text-center mb-2">Weather Forecast Application</h1>
+      <p class="text-center text-sm text-gray-600">Search by city or use your current location. Toggle °C/°F. Recent searches stored locally.</p>
+    </header>
+
+    <section class="bg-white/80 p-4 rounded-2xl shadow-lg">
+      <div class="flex gap-2 items-center mb-4">
+        <input id="cityInput" type="text" placeholder="Enter city name" class="flex-1 p-3 rounded-lg border" />
+        <button id="searchBtn" class="px-4 py-2 rounded-lg bg-sky-600 text-white">Search</button>
+        <button id="locBtn" class="px-3 py-2 rounded-lg border">Use My Location</button>
+        <button id="toggleUnit" class="px-3 py-2 rounded-lg border">°C</button>
+      </div>
+
+      <div id="errorBox" class="hidden mb-4 p-3 rounded-lg bg-red-100 text-red-800"></div>
+
+      <div class="flex gap-4 flex-col md:flex-row">
+        <!-- Current weather card -->
+        <div class="flex-1 p-4 bg-sky-50 rounded-xl">
+          <div id="currentCard" class="text-center">
+            <div id="locationName" class="text-xl font-semibold"></div>
+            <div id="conditionText" class="mt-1 text-sm text-gray-600"></div>
+            <div class="mt-4 text-5xl font-bold" id="temperature">--°</div>
+            <div class="mt-2 flex justify-center gap-4 text-sm text-gray-700">
+              <div>Humidity: <span id="humidity">--</span>%</div>
+              <div>Wind: <span id="wind">--</span> km/h</div>
+            </div>
+            <div class="mt-3" id="weatherIcon"></div>
+            <div class="mt-3" id="alertBox" class=""></div>
+          </div>
+
+          <div class="mt-4">
+            <label class="block text-sm text-gray-600 mb-1">Recent Searches</label>
+            <select id="recentDropdown" class="w-full p-2 rounded-lg border hidden"></select>
+          </div>
+        </div>
+
+        <!-- Forecast -->
+        <div class="w-full md:w-1/2 p-4 bg-white rounded-xl shadow-inner">
+          <h2 class="font-semibold mb-3">5-Day Forecast</h2>
+          <div id="forecastContainer" class="grid grid-cols-1 gap-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-6 text-center text-xs text-gray-500">
+      Project prepared according to the provided assignment PDF.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
